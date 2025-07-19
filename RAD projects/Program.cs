@@ -12,6 +12,16 @@ namespace RAD_projects
         {
 
             Console.WriteLine("Hello World");
+
+            Console.WriteLine("Enter a Number");
+            int num = int.Parse(Console.ReadLine());
+            Console.WriteLine("You Entered "+ num);
+
+            for (int i=0;i <10; i++)
+            {
+                Console.WriteLine("Line "+i);
+            }
+
         }
     }
 }
