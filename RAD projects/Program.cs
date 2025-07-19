@@ -37,6 +37,7 @@ namespace RAD_projects
             printStars(num);
             printMidTriangle(num);
             printReverseTriangle(num);
+            factorial(num);
         }
 
          public static void printMidTriangle(int n)
@@ -72,5 +73,17 @@ namespace RAD_projects
         }
 
 
+        public static void factorial(int n)
+        {
+            int fact = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                fact *= i;
+            }
+            Console.WriteLine("Factorial of " + n + " is " + fact);
+        }
+
     }
+
+   
 }
