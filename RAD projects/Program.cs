@@ -36,6 +36,7 @@ namespace RAD_projects
 
             printStars(num);
             printMidTriangle(num);
+            printReverseTriangle(num);
         }
 
          public static void printMidTriangle(int n)
@@ -54,6 +55,21 @@ namespace RAD_projects
             }
         }
 
+        public static void printReverseTriangle(int n)
+        {
+            for (int i = n; i > 0; i--)
+            {
+                for (int j = 0; j < n - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 0; k < i; k++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+        }
 
 
     }
