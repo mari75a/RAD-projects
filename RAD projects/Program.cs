@@ -38,6 +38,9 @@ namespace RAD_projects
             printMidTriangle(num);
             printReverseTriangle(num);
             factorial(num);
+
+            int[] arr = { 1, 2, 3, 4, 5 };
+            SumElements(arr);
         }
 
          public static void printMidTriangle(int n)
@@ -81,6 +84,16 @@ namespace RAD_projects
                 fact *= i;
             }
             Console.WriteLine("Factorial of " + n + " is " + fact);
+        }
+
+        public static void SumElements(int[] arr)
+        {
+            int sum = 0;
+            foreach (int num in arr)
+            {
+                sum += num;
+            }
+            Console.WriteLine("Sum of elements: " + sum);
         }
 
     }
