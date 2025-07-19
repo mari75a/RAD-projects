@@ -8,6 +8,18 @@ namespace RAD_projects
 {
     internal class Program
     {
+
+        public static void printStars(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j <= i; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+        }
         static void Main(string[] args)
         {
 
@@ -22,6 +34,9 @@ namespace RAD_projects
                 Console.WriteLine("Line "+i);
             }
 
+            printStars(num);
         }
+
+        
     }
 }
